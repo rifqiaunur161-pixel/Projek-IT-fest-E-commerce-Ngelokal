@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT Fest Kelompok</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+
+    <style>
+      /* paginnation */
+#pagination{
+  text-align: center;
+}
+
+  #pagination a.active {
+    background-color: #055e58; /* lebih gelap */
+    border: 2px solid #fff;
+  }
+
+
+
+#pagination a{
+  text-decoration: none;
+  background-color: #088178;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600 ;
+}
+
+#pagination a i{
+  font-size: 16px;
+  font-weight: 600;
+}
+    </style>
+
+
+
+
+  </head>
+
+  <body>
+ <section id="header">
+      <a href="#"><img src="img/asset foto/logo6.png" class="logo" alt="" ></a>
+
+      <div>
+        <ul id="navbar">
+          <li><a  href="index.html">Home</a></li>
+          <li><a class="active" href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">Tentang</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="lg-bag">
+            <a href="#"><i class="far fa-shopping-bag"></i></a>
+          </li>
+          <a href="#" id="close"><i class="far fa-times"></i></a>
+        </ul>
+      </div>
+
+       <!-- Dropdown keranjang -->
+<div id="cartDropdown">
+  <h4>Keranjang</h4>
+  <div id="cartItems"></div>
+  <div id="cartTotal">Total: Rp0</div>
+  <button id="checkoutBtn">Checkout</button>
+</div>
+
+      <div id="mobile">
+        <a href="#"><i class="far fa-shopping-bag"></i></a>
+         <i id="bar" class="fas fa-outdent"></i> 
+      </div>
+    </section>
+
+    <section id="page-header">
+      
+      <h2>#NgelokalStyle</h2>
+      <p>Temukan Koleksi fashion lokal pilihan dengan sentuhan modern.</p>
+    </section>
+
+    <section id="product1" class="section-p1">
+     
+      <div class="pro-container">
+        <div class="pro" onclick="window.location.href='sproduct.html';">
+          <img src="img//asset foto/Batik/batik 5.png" alt="" />
+          <div class="des">
+            <span>Batik.</span>
+            <h5>Baju Batik hitam</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.135.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href='sproduct2.html';">
+          <img src="img/asset foto/Muslim wear/kemeja gamis 1.webp" alt="" />
+          <div class="des">
+            <span>Baju Lebaran.</span>
+            <h5>Kemeja Gamis</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.84.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href='sproduct3.html';">
+          <img src="img/asset foto/Celana/chino.webp" alt="" />
+          <div class="des">
+            <span>Pants.</span>
+            <h5>Straight Pants</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp 50.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href='sproduct4.html';">
+          <img src="img/asset foto/Batik/batik 2.png" alt="" />
+          <div class="des">
+            <span>Batik.</span>
+            <h5>Baju Batik Garuda</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.145.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+      
+        <div class="pro">
+          <img src="img/asset foto/Batik/batik 10.png" alt="" />
+          <div class="des">
+            <span>Batik.</span>
+            <h5>Baju Batik Coksu </h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.128.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/asset foto/Batik/batik 7.png" alt="" />
+          <div class="des">
+            <span>Batik.</span>
+            <h5>Baju Batik Merah</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.110.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/asset foto/Batik/batik 1.png" alt="" />
+          <div class="des">
+            <span>Batik.</span>
+            <h5>Baju Batik Merah muda</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/asset foto/Batik/batik 9.png" alt="" />
+          <div class="des">
+            <span>Batik.</span>
+            <h5>Baju Batik Angsa</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.175.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/asset foto/Muslim wear/DUha kemeja muslim 2.1.webp" alt="" />
+          <div class="des">
+            <span>Baju Lebaran.</span>
+            <h5>Kemeja Muslim Hitam Motif</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.105.600,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/asset foto/Muslim wear/duha kemeja muslim 1.webp" alt="" />
+          <div class="des">
+            <span>Baju Lebaran.</span>
+            <h5>Kemeja Muslim Biru Motif</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/asset foto/Muslim wear/Duha kemeja muslim 2.webp" alt="" />
+          <div class="des">
+            <span>Baju Lebaran.</span>
+            <h5>Kemeja Muslim Abu Abu Motif</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.105.500,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/asset foto/Muslim wear/duha kemeja muslim 3.1.webp" alt="" />
+          <div class="des">
+            <span>Baju lebaran.</span>
+            <h5>Baju Kemeja Muslim Navy</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.98.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/asset foto/Celana/straight pants (jeans).webp" alt="" />
+          <div class="des">
+            <span>Pants</span>
+            <h5>Black Loosen Pants</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/asset foto/Celana/straight pants (jeans) 2.webp " alt="" />
+          <div class="des">
+            <span>Pants</span>
+            <h5>Broken White Loosen Pants</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/asset foto/Celana/straight pants jeans 2.webp" alt="" />
+          <div class="des">
+            <span>Pants</span>
+            <h5>Blue Loosen Pants</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/asset foto/Muslim wear/kemeja muslim 2.webp" alt="" />
+          <div class="des">
+            <span>Baju Lebaran</span>
+            <h5>Baju Muslim Kuning</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.160.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/asset foto/Muslim wear/duha muslim wear 1.1.webp" alt="" />
+          <div class="des">
+            <span>Baju Lebaran</span>
+            <h5>Kemeja Gamis Cokelat</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/asset foto/Celana/cargo loose pants 1.webp" alt="" />
+          <div class="des">
+            <span>Pants</span>
+            <h5>Cargo Loose Pants</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.75.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/asset foto/Muslim wear/DUha kemeja muslim 3.2.webp" alt="" />
+          <div class="des">
+            <span>Baju Lebaran.</span>
+            <h5>Kemeja Muslim Hijau Tua</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.99.999,99</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/asset foto/Batik/batik 4.png" alt="" />
+          <div class="des">
+            <span>Batik</span>
+            <h5>Baju Batik Biru</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.999.999,99</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+    </section>
+
+ 
+
+    <footer class="section-p1">
+      <div class="col">
+        <img class="logo" src="img/asset foto/logo6.png" alt="" />
+        <h4>Contact</h4>
+        <p><strong>Alamat:</strong> Politelnik Negeri Sriwijaya</p>
+        <p><strong>Phone:</strong> 0895617489466</p>
+        <p><strong>Hours:</strong> 10:00-18:00. Senin-Sabtu</p>
+        <div class="follow">
+          <h4>Follow us</h4>
+          <div class="icon">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contac Us</a>
+      </div>
+
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+
+
+
+      <div class="col create-by">
+        <h4>Create By</h4>
+        <p>Web Ini Dibikin Kami Ber-3</p>
+        
+       <p>@rifqii_arn  @Baqii_boy  @Liefaksara</p>
+       
+        
+
+      </div>
+
+      <div class="copyright">
+       <p>© Copyright ngelokal 2025. All rights reserved.</p>
+      </div>
+
+
+
+
+    </footer>
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+
+
+    <script>
+  const products = document.querySelectorAll(".pro"); // ambil semua produk
+  const productsPerPage = 12; // maksimal produk per halaman
+  const totalPages = Math.ceil(products.length / productsPerPage);
+  let currentPage = 1;
+
+  function showPage(page) {
+    products.forEach((p, i) => {
+      p.style.display =
+        i >= (page - 1) * productsPerPage && i < page * productsPerPage
+          ? "block"
+          : "none";
+    });
+    renderPagination(page);
+  }
+
+  function renderPagination(page) {
+    const pagination = document.getElementById("pagination");
+    pagination.innerHTML = "";
+
+    // tombol prev
+    if (page > 1) {
+      const prev = document.createElement("a");
+      prev.href = "#";
+      prev.innerHTML = "&larr;";
+      prev.addEventListener("click", (e) => {
+        e.preventDefault();
+        currentPage--;
+        showPage(currentPage);
+      });
+      pagination.appendChild(prev);
+    }
+
+    // nomor halaman
+    for (let i = 1; i <= totalPages; i++) {
+      const link = document.createElement("a");
+      link.href = "#";
+      link.textContent = i;
+      if (i === page) link.classList.add("active");
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        currentPage = i;
+        showPage(currentPage);
+      });
+      pagination.appendChild(link);
+    }
+
+    // tombol next
+    if (page < totalPages) {
+      const next = document.createElement("a");
+      next.href = "#";
+      next.innerHTML = "&rarr;";
+      next.addEventListener("click", (e) => {
+        e.preventDefault();
+        currentPage++;
+        showPage(currentPage);
+      });
+      pagination.appendChild(next);
+    }
+  }
+
+  // tampilkan halaman pertama saat load
+  showPage(currentPage);
+</script>
+
+
+
+
+
+  </body>
+</html>
